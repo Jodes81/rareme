@@ -1,0 +1,55 @@
+body
+{
+	color: #dfd;
+	font-family: Verdana;
+}
+header div,
+header div,
+main div,
+footer div
+{
+	padding: 1em;
+	border: 2px solid #2f2;
+	border-radius: 1em;
+	margin-top: 1em;
+}
+header div,
+footer div
+{
+	background-color: #272;	
+}
+.oneIn, .onceEvery
+{
+	font-weight: bold;
+}
+main div
+{
+	background-color: #4a4;
+}
+h1, h2
+{
+	margin: 0px;
+}
+input 
+{
+	border: 1px solid #222;
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+}
+button
+{
+	border: 1px solid #222;
+	border-radius: 0.5em;
+	padding: 1em;
+	background-color: #ddd;
+	margin: 2px;
+}
+button:hover
+{
+	background-color: #eee;
+}
+button:active
+{
+	border-width: 3px;
+	margin: 0px;
+}

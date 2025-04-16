@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Me - Uniqueness calculator</title>
+    <script src="main.js?1"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>RareMe</h1>
+            <h2>Person uniqueness calculator</h2>
+        </div>
+    </header>
+    <main>
+        <div class="uniqueness">
+            <h2>Your uniqueness:</h2>
+            <p class="oneIn"></p>
+            <p class="onceEvery"></p>
+            <p class="tip"></p>
+            <span class="share"></span>
+        </div>
+        <div class="addTrait">
+            <h2>Add a trait</h2>
+            <form onsubmit="return false;">
+                <p>
+                    Trait name, such as "Enjoys playing football" or "Reads fast":
+                    <br/>
+                    <input name="name" onfocus="this.value='';"/>
+                </p>
+                <p>
+                    Approx percentage of people with that trait:
+                    <br/>
+                    <input type="text"  onfocus="this.value='';" name="percent" value="10" style="width: 4em"/>%
+                </p>
+                <button onsubmit="return false" onclick="addTrait();">Add trait</button>
+            </form>
+        </div>
+        <div class="traits">
+            <h2>Traits:</h2>
+            <ul></ul>
+            <button onclick="reset(); return false;">Start afresh (no traits)</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            &copy; RareMe.tiiny.site 2025
+        </div>
+    </footer>
+</body>
+</html>
